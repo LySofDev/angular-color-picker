@@ -2,20 +2,17 @@
 
   <section
     class="banner"
-    [ngStyle]="{ 'background': selectedColor }"
-    (click)="clearSelectedColor()">
+    [ngStyle]="{ 'background': selectedColor }">
     <div class="title">{{ selectedColor }}</div>
   </section>
 
   <section class="colors">
+    <div class="swatch" (click)="clearSelectedColor()"></div>
     <div
       *ngFor="let color of colors"
       class="swatch"
       (click)="setSelectedColor(color)"
       [ngStyle]="{ 'background': color }">
-      <div class="title">
-        {{ color }}
-      </div>
     </div>
   </section>
 

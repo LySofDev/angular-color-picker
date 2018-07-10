@@ -20,7 +20,6 @@ export class ColorsService {
       "#86b5d5",
       "#2c7f84",
       "#224a72",
-      "#000000"
     ]);
   }
 }
