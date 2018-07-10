@@ -1,0 +1,44 @@
+.color-picker {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  box-sizing: border-box;
+}
+
+.title {
+  background: white;
+  padding: 1em 2em;
+  display: inline-block;
+  border: solid 1px black;
+  box-sizing: border-box;
+}
+
+.colors {
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.swatch {
+  width: 80vw;
+  height: 10vh;
+  border: solid 1px black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

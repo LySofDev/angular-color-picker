@@ -5,9 +5,14 @@
   </section>
 
   <section class="colors">
-    <div class="swatch">
-      COLORS
+    <div
+      *ngFor="let color of colors"
+      class="swatch"
+      [ngStyle]="{ 'background': color }">
+      <div class="title">
+        {{ color }}
+      </div>
     </div>
   </section>
-  
+
 </main>
