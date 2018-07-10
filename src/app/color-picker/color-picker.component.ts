@@ -20,10 +20,17 @@ export class ColorPickerComponent implements OnInit {
     });
   }
 
+  /**
+  * Set the selected color to a new color
+  * @param color The newly selected color as a string
+  */
   setSelectedColor(color: string) {
     this.selectedColor = color;
   }
 
+  /**
+  * Reset the currently selected color to 'none'
+  */
   clearSelectedColor() {
     this.selectedColor = "none";
   }

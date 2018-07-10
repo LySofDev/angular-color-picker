@@ -7,11 +7,9 @@ import { ColorPickerModule } from './color-picker.module';
 })
 export class ColorsService {
 
-  constructor() { }
-
   /**
   * A collection of existing colors
-  * @returns The HEX values for 6 colors
+  * @returns The HEX values for 6 colors as an Observable list of strings
   */
   getColors(): Observable<string[]> {
     return of([
@@ -22,4 +20,5 @@ export class ColorsService {
       "#224a72",
     ]);
   }
+  
 }
