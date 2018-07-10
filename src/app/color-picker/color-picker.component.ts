@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColorsService } from './colors.service';
 
 @Component({
   selector: 'color-picker',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColorPickerComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private colorsService: ColorsService
+  ) { }
 
   ngOnInit() {
+    console.log(this.colorsService.getColors());
   }
 
 }

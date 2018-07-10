@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ColorPickerComponent } from './color-picker.component';
+import { ColorsService } from './colors.service';
 
 @NgModule({
   imports: [
@@ -11,6 +12,9 @@ import { ColorPickerComponent } from './color-picker.component';
   ],
   declarations: [
     ColorPickerComponent
+  ],
+  providers: [
+    ColorsService
   ]
 })
 export class ColorPickerModule { }
