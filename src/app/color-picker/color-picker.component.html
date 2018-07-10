@@ -1,7 +1,10 @@
 <main class="color-picker">
 
-  <section class="banner" [ngStyle]="{ 'background': selectedColor }">
-    <div class="title" (click)="clearSelectedColor()">{{ selectedColor }}</div>
+  <section
+    class="banner"
+    [ngStyle]="{ 'background': selectedColor }"
+    (click)="clearSelectedColor()">
+    <div class="title">{{ selectedColor }}</div>
   </section>
 
   <section class="colors">
