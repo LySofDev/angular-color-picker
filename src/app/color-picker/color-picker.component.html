@@ -1,13 +1,14 @@
 <main class="color-picker">
 
-  <section class="banner">
-    <div class="title">TITLE</div>
+  <section class="banner" [ngStyle]="{ 'background': selectedColor }">
+    <div class="title" (click)="clearSelectedColor()">{{ selectedColor }}</div>
   </section>
 
   <section class="colors">
     <div
       *ngFor="let color of colors"
       class="swatch"
+      (click)="setSelectedColor(color)"
       [ngStyle]="{ 'background': color }">
       <div class="title">
         {{ color }}

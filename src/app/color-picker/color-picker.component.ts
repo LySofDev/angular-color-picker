@@ -8,6 +8,7 @@ import { ColorsService } from './colors.service';
 })
 export class ColorPickerComponent implements OnInit {
   colors: string[] = [];
+  selectedColor: string = "none";
 
   constructor(
     private colorsService: ColorsService
@@ -17,6 +18,14 @@ export class ColorPickerComponent implements OnInit {
     this.colorsService.getColors().subscribe((colors: string[]) => {
       this.colors = colors;
     });
+  }
+
+  setSelectedColor(color: string) {
+    this.selectedColor = color;
+  }
+
+  clearSelectedColor() {
+    this.selectedColor = "none";
   }
 
 }
